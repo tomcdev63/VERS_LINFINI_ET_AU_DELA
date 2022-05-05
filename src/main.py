@@ -2,7 +2,6 @@ import time, os, re
 from uuid import UUID
 import subprocess
 
-
 devices = os.popen('sudo blkid').readlines()
 
 usbs = []
@@ -17,14 +16,9 @@ for u in devices:
 
 print(usbs[0]["PARTUUID"])
 
-sound_file = '"../data/viead.mp3"'
+commande_sound = 'mpg123 "../data/viead.mp3"'
+commande_sound_closed = "pkill mpg123"
 
-devices.
-
-p = subprocess.Popen(['mpg123', # The program to launch
-                      '-C',     # Commands can be sent
-                      '-q',     # Be quiet
-                      sound_file],
-                      stdin=subprocess.PIPE, # Send commands here
-                      stdout=None,   
-                      stderr=None)
+process = os.popen(commande_sound)
+time.sleep(10)
+os.popen(commande_sound_closed)
