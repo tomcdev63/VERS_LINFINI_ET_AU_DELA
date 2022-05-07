@@ -49,6 +49,10 @@ De plus la solution "VERS L'INFINI ET AU DELA" est capable de reconnaitre le bra
 * ```https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/blob/main/windows/src/main.py``` - Script Windows
 * ```https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/blob/main/linux/src/main.py``` - Script Linux
 
+    ```sh
+    python main.py
+    ```
+
 ![Screenshot](https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/blob/main/windows/data/VIEAD.PNG?raw=true)
 ![Screenshot](https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/blob/main/windows/data/buzz.ico?raw=true)
 
