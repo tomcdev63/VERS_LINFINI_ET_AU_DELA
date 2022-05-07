@@ -5,29 +5,26 @@ import requests
 import serial.tools.list_ports
 import webbrowser
 
-
 root = Tk()
-root.geometry("450x250")
+root.geometry("450x208")
 root.iconbitmap('../data/buzz.ico')
-root.configure(bg='ghost white')
-root.title("VIEAD - CelestronC9.25 fastar")
+# root.configure(bg='ghost white')
+root.title("VERS L'INFINI ET AU DELA! - Celestron C9.25 Fastar")
 
 bg = PhotoImage(file="G:/TAF/TOMDEV/VERS_LINFINI_ET_AU_DELA/windows/data/wallpaper.png")
 my_label = Label(root, image=bg).pack()
 
-Label(root, text = "VERS L'INFINI ET AU DELA!", font = "arial 20 bold", bg='white smoke').pack()
-Label(text ="DataFlair", font = 'arial 15 bold', bg ='white smoke' , width = '20').pack(side = 'bottom')
 Msg = StringVar()
 Label(root,text ="Code Postal du lieu d'obeservation actuelle :", font = 'arial 11 bold', bg ='white smoke').place(x=35,y=20)
 COORDONNEES = StringVar(value="Coords: ")
-label_coords = Label(root,textvariable =COORDONNEES, font = 'arial 15 bold', bg ='white smoke').place(x=35,y=200)
-entry_field = Entry(root, textvariable = Msg ,width ='63')
+label_coords = Label(root,textvariable =COORDONNEES, font = 'arial 11 bold', bg ='white smoke').place(x=35,y=160)
+entry_field = Entry(root, textvariable = Msg ,width ='20')
 entry_field.place(x=35,y=60)
 
 celestron_connected = BooleanVar(value=False)
+
 def task():
     ports = serial.tools.list_ports.comports()
-
     if celestron_connected.get() == False and ports != []:
         print("connection")
         playsound.playsound(r"G:\TAF\TOMDEV\VERS_LINFINI_ET_AU_DELA\windows\data\buzz.mp3")
@@ -35,14 +32,11 @@ def task():
     elif celestron_connected.get() == True and ports == []:
         print("deconnection")
         celestron_connected.set(False)
-
     root.after(500, task)
 
 def Text_to_speech():
     Message = entry_field.get()
-
     COORDONNEES.set("Coords: " + str(get_coordonees(Message)))
-
     try:
         speech = gTTS(text = Message)
         speech.save(r'G:\TAF\TOMDEV\VERS_LINFINI_ET_AU_DELA\windows\src\DataFlair.mp3')
