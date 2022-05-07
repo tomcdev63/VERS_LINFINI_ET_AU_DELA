@@ -54,7 +54,7 @@ De plus la solution "VERS L'INFINI ET AU DELA" est capable de reconnaitre le bra
     ```
 
 ![Screenshot](https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/blob/main/windows/data/VIEAD.PNG?raw=true)
-![Screenshot](https://raw.githubusercontent.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/main/windows/data/buzz.ico)
+![Screenshot](https://raw.githubusercontent.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/main/windows/data/buzz.jpg)
 
 
 
