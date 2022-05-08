@@ -10,10 +10,10 @@ root = Tk()
 root.geometry("450x208")
 root.title("VERS L'INFINI ET AU DELA! - Celestron C9.25 Fastar")
 
-if "nt" == os.name:
-    root.wm_iconbitmap(bitmap = "G:/TAF/TOMDEV/VERS_LINFINI_ET_AU_DELA/windows/src/buzz.ico")
-else:
-    root.wm_iconbitmap(bitmap = "G:/TAF/TOMDEV/VERS_LINFINI_ET_AU_DELA/windows/src/buzz.xbm")
+# if "nt" == os.name:
+#     root.wm_iconbitmap(bitmap = "G:/TAF/TOMDEV/VERS_LINFINI_ET_AU_DELA/windows/src/buzz.ico")
+# else:
+#     root.wm_iconbitmap(bitmap = "G:/TAF/TOMDEV/VERS_LINFINI_ET_AU_DELA/windows/src/buzz.xbm")
 
 bg = PhotoImage(file="G:/TAF/TOMDEV/VERS_LINFINI_ET_AU_DELA/windows/data/wallpaper.png")
 my_label = Label(root, image=bg).pack()
