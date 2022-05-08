@@ -29,7 +29,7 @@ Ce petit programme a pour but, à l'aide d'une interface graphique, d'envoyer un
 Notamment grâce à la latitude je pourrais facilement calibrer mon télescope.  
 En complément le module gTTs analyse le texte transmis (coordonnées géographiques), le converti sous format MP3 et le restitue via "VIEAD" :)  
 De plus la solution "VIEAD" est capable de reconnaitre le branchement de la monture CGX via les PORTSCOM et de lancer l'action souhaitée...  
-Ici la phrase culte de Toy Story : Vers l'infini et au-delà!
+Ici la phrase culte de Toy Story : "Vers l'infini et au-delà!" 🎶👨‍🚀
 
 
 <!-- CONSTRUIT AVEC -->

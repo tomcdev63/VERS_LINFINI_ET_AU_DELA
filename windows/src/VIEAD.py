@@ -62,7 +62,7 @@ def get_infos():
     webbrowser.open("https://www.lameteoagricole.net")
 
 def Exit():
-    # playsound.playsound(r"G:\TAF\TOMDEV\VERS_LINFINI_ET_AU_DELA\windows\data\goodbye.mp3")
+    playsound.playsound(r"G:\TAF\TOMDEV\VERS_LINFINI_ET_AU_DELA\windows\data\goodbye.mp3")
     root.destroy()
 
 def Reset():
@@ -72,7 +72,7 @@ def Reset():
 def Welcome():
     playsound.playsound("G:\TAF\TOMDEV\VERS_LINFINI_ET_AU_DELA\windows\data\welcome.mp3")
 
-Button(root, text = "PLAY", font = 'arial 15 bold' , command = Text_to_speech ,width = '6', bg = 'Green').place(x=35,y=98)
+Button(root, text = "LOOK", font = 'arial 15 bold' , command = Text_to_speech ,width = '6', bg = 'Green').place(x=35,y=98)
 Button(root, font = 'arial 15 bold',text = 'EXIT', width = '6' , command = Exit, bg = 'Red').place(x=135 , y = 98)
 Button(root, font = 'arial 15 bold',text = 'RESET', width = '6' , command = Reset, bg = 'Orange').place(x=235 , y = 98)
 Button(root, font = 'arial 15 bold',text = 'INFOS', width = '6' , command = get_infos).place(x=335 , y = 98)
