@@ -53,7 +53,7 @@ Ici la phrase culte de Toy Story : Vers l'infini et au-delà!
 * ```https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/blob/main/linux/src/main.py``` - Script Linux
 
     ```sh
-    python main.py
+    python VIEAD.py
     ```
 ![Screenshot](https://raw.githubusercontent.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/main/windows/data/buzz.jpg)
 
