@@ -31,6 +31,7 @@ En complément le module gTTs analyse le texte transmis (coordonnées géographi
 De plus la solution "VIEAD" est capable de reconnaitre le branchement de la monture CGX via les PORTSCOM et de lancer l'action souhaitée...  
 Ici la phrase culte de Toy Story : "Vers l'infini et au-delà!" 👨‍🚀🤓
 
+![Screenshot](https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/blob/main/windows/data/Capture.PNG?raw=true)
 
 <!-- CONSTRUIT AVEC -->
 ## Construit_avec 
