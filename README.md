@@ -50,8 +50,8 @@ Ici la phrase culte de Toy Story : "Vers l'infini et au-delà!" 👨‍🚀🤓
 <!-- USAGE -->
 ## Usage 
  
-* ```https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/blob/main/windows/src/main.py``` - Script Windows
-* ```https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/blob/main/linux/src/main.py``` - Script Linux
+* ```https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/blob/main/windows/src/VIEAD.py``` - Script Windows
+* ```https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/blob/main/linux/src/VIEAD.py``` - Script Linux
 
     ```sh
     python VIEAD.py
