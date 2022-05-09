@@ -10,12 +10,7 @@ root = Tk()
 root.geometry("450x208")
 root.title("VERS L'INFINI ET AU DELA! - Celestron C9.25 Fastar")
 
-if "nt" == os.name:
-    root.wm_iconbitmap(bitmap = "G:/TOMDEV/VERS_LINFINI_ET_AU_DELA/windows/data/buzz.ico")
-else:
-    root.wm_iconbitmap(bitmap = "G:/TOMDEV/VERS_LINFINI_ET_AU_DELA/windows/data/buzz.xbm")
-
-bg = PhotoImage(file="G:/TOMDEV/VERS_LINFINI_ET_AU_DELA/windows/data/wallpaper.png")
+bg = PhotoImage(file="../data/wallpaper.png")
 my_label = Label(root, image=bg).pack()
 
 Msg = StringVar()
@@ -31,7 +26,7 @@ def task():
     ports = serial.tools.list_ports.comports()
     if celestron_connected.get() == False and ports != []:
         print("connection")
-        playsound.playsound(r"G:\TOMDEV\VERS_LINFINI_ET_AU_DELA\windows\data\buzz.mp3")
+        playsound.playsound(r"../data/buzz.mp3")
         celestron_connected.set(True)
     elif celestron_connected.get() == True and ports == []:
         print("deconnection")
@@ -44,8 +39,8 @@ def Text_to_speech():
     COORDONNEES.set("Coords: " + str(speak_coor))
     try:
         speech = gTTS(text = "Sur ce lieu d'observation, la  longitude est de" + "et la latitude et de".join(str(x) for x in speak_coor), lang="fr")
-        speech.save(r'G:\TOMDEV\VERS_LINFINI_ET_AU_DELA\windows\data\geocoor.mp3')
-        playsound.playsound(r'G:\TOMDEV\VERS_LINFINI_ET_AU_DELA\windows\data\geocoor.mp3', block=True)
+        speech.save(r"../data/geocoor.mp3")
+        playsound.playsound(r"../data/geocoor.mp3", block=True)
     except Exception as e:
         print(e)
 
@@ -62,7 +57,7 @@ def get_infos():
     webbrowser.open("https://www.lameteoagricole.net")
 
 def Exit():
-    playsound.playsound(r"G:\TOMDEV\VERS_LINFINI_ET_AU_DELA\windows\data\goodbye.mp3")
+    playsound.playsound(r"../data/goodbye.mp3")
     root.destroy()
 
 def Reset():
@@ -70,7 +65,7 @@ def Reset():
     COORDONNEES.set("")
 
 def Welcome():
-    playsound.playsound("G:\TOMDEV\VERS_LINFINI_ET_AU_DELA\windows\data\welcome.mp3")
+    playsound.playsound("../data/welcome.mp3")
 
 Button(root, text = "LOOK", font = 'arial 15 bold' , command = Text_to_speech ,width = '6', bg = 'Green').place(x=35,y=98)
 Button(root, font = 'arial 15 bold',text = 'EXIT', width = '6' , command = Exit, bg = 'Red').place(x=135 , y = 98)
