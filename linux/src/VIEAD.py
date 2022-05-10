@@ -14,9 +14,9 @@ bg = PhotoImage(file="../data/wallpaper.png")
 my_label = Label(root, image=bg).pack()
 
 Msg = StringVar()
-Label(root,text ="Code Postal du lieu d'obeservation actuelle :", font = 'arial 11 bold', bg ='white smoke').place(x=35,y=20)
-COORDONNEES = StringVar(value="Coords: ")
-VILLES = StringVar(value="Ville: ")
+Label(root,text ="Code postal du lieu d'observation actuelle :", font = 'arial 11 bold', bg ='white smoke').place(x=35,y=20)
+COORDONNEES = StringVar(value="Coords : ")
+VILLES = StringVar(value="Ville : ")
 label_city = Label(root,textvariable =VILLES, font = 'arial 11 bold', bg ='white smoke').place(x=35,y=160)
 label_coords = Label(root,textvariable =COORDONNEES, font = 'arial 11 bold', bg ='white smoke').place(x=35,y=200)
 entry_field = Entry(root, textvariable = Msg ,width ='20')
@@ -42,7 +42,7 @@ def Text_to_speech():
     lat = str(lat)
     long = str(long)
     VILLES.set("Ville: " + city)
-    COORDONNEES.set("Longitude: " + long[0:4] + " - " + "Latitude: " + lat[0:5])
+    COORDONNEES.set("Longitude : " + long[0:4] + " - " + "Latitude : " + lat[0:5])
     
     try:
         speech = gTTS(text = f"Vous êtes actuellement dans la ville de {city}, sa longitude est de {long[0:4]} degrés et sa latitude est de {lat[0:5]} degrés", lang="fr")
