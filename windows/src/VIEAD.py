@@ -63,10 +63,18 @@ def get_coordonees(code_postal):
     return CITY, GEO_COOR[0], GEO_COOR[1] 
 
 def get_infos():
+    CHEMINSN = "C:\Program Files (x86)\Starry Night Celestron SE 8\starrynight.exe"
+    CHEMINS = "C:\Program Files\Stellarium\stellarium.exe"
     webbrowser.open("https://www.stelvision.com/astro/a-voir-actuellement-dans-le-ciel/")
     webbrowser.open("https://laclefdesetoiles.com/tubes-optiques-seuls/115-tube-optique-schmidt-cassegrain-celestron-c925-fastar-losmandy-c91027.html#:~:text=Le%20tube%20optique%20Celestron%20C9,ciel%20profond%20à%20grand%20champ.")
     webbrowser.open("https://stellarium-web.org")
     webbrowser.open("https://www.lameteoagricole.net")
+    try:
+        os.popen(CHEMINSN)
+        os.popen(CHEMINS)
+    except Exception as e:
+        print(e)
+
 
 def Exit():
     playsound.playsound(r"G:\TOMDEV\VERS_LINFINI_ET_AU_DELA\windows\data\goodbye.mp3")
