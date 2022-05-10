@@ -72,7 +72,7 @@ def get_infos():
     webbrowser.open("https://www.lameteoagricole.net")
     try:
         os.popen(CHEMINSN)
-        time.sleep(3)
+        time.sleep(10)
         os.popen(CHEMINS)
     except Exception as e:
         print(e)
