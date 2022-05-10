@@ -5,6 +5,7 @@ import requests
 import serial.tools.list_ports
 import webbrowser
 import os
+import time
 
 root = Tk()
 root.geometry("450x250")
@@ -71,6 +72,7 @@ def get_infos():
     webbrowser.open("https://www.lameteoagricole.net")
     try:
         os.popen(CHEMINSN)
+        time.sleep(3)
         os.popen(CHEMINS)
     except Exception as e:
         print(e)
