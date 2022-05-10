@@ -7,7 +7,7 @@ import webbrowser
 import os
 
 root = Tk()
-root.geometry("450x208")
+root.geometry("450x250")
 root.title("VERS L'INFINI ET AU DELA! - Celestron C9.25 Fastar")
 
 bg = PhotoImage(file="../data/wallpaper.png")
